@@ -1,0 +1,99 @@
+:root{
+  /* fonts */
+  --heading-main-font: 'Dancing Script', cursive;
+  --body-main-font: 'Nanum Myeongjo', serif;
+
+  /* colors */
+  --light-rosegold-color: #F8CEC4;
+  --dark-rosegold-color: #CF8E7E;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-family: var(--body-main-font);
+}
+
+header{
+  background-color: var(--light-rosegold-color);
+}
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+}
+
+
+/* NavBar Styling */
+
+.navbar-container{
+  margin: 0 auto;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+}
+
+.log-container{
+  border-left: 2px solid #fdded7;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image{
+  width: 3rem;
+  margin: 0 1rem;
+}
+
+.logo-name{
+  font-family: var(--heading-main-font);
+  letter-spacing: 2.5px;
+  font-size: 3rem;
+  color: #FFFFFF;
+}
+
+.navbar-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-list{
+  
+}
+
+.navbar-listitem{
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.navbar-link{
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar-link:hover{
+  color: var(--dark-rosegold-color);
+}
+
+.navbar-link::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--dark-rosegold-color);
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.navbar-link:hover::after{
+  width: 100%;
+}
