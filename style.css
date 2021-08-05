@@ -2,6 +2,7 @@
   /* fonts */
   --heading-main-font: 'Dancing Script', cursive;
   --body-main-font: 'Nanum Myeongjo', serif;
+  --article-content-font: 'Josefin Sans', sans-serif;
 
   /* colors */
   --light-rosegold-color: #F8CEC4;
@@ -20,9 +21,24 @@ header{
   background-color: var(--light-rosegold-color);
 }
 
+h1{
+  font-size: 2rem;
+}
+
+h1,h2,h3{
+  font-family: var(--heading-main-font);
+  font-weight: 400;
+}
+
+h1 strong{
+  font-family: var(--heading-main-font);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
 .container{
   margin: 0 auto;
-  width: 90%;
+  width: 75%;
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +52,7 @@ header{
 
 .navbar-container{
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 7rem;
@@ -49,24 +65,20 @@ header{
 }
 
 .logo-image{
-  width: 3rem;
+  width: 4rem;
   margin: 0 1rem;
 }
 
 .logo-name{
   font-family: var(--heading-main-font);
   letter-spacing: 2.5px;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #FFFFFF;
 }
 
 .navbar-list{
   display: flex;
   flex-direction: row;
-}
-
-.navbar-list{
-  
 }
 
 .navbar-listitem{
@@ -96,4 +108,80 @@ header{
 
 .navbar-link:hover::after{
   width: 100%;
+}
+
+/* SECTION 1 STYLING */
+.section{
+  /* border: 1px skyblue solid; */
+  height: 95vh;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.sub-container::after{
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 2px;
+  background-color: var(--dark-rosegold-color);
+}
+
+.main-header{
+  width: 95%;
+  text-align: right;
+  color: var(--dark-rosegold-color);
+  padding-bottom: 1rem;
+  border-bottom: 1px var(--dark-rosegold-color) dashed;
+}
+
+.article-content{
+  flex: 50%;
+  font-size: 1.5rem;
+  font-family: var(--article-content-font);
+  font-weight: 200;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.article-body{
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-family: var(--article-content-font);
+  margin-bottom: 3rem;
+}
+
+.article-body strong{
+  font-size: 1.5rem;
+  font-family: var(--article-content-font);
+  font-weight: 400;
+}
+
+.article-image{
+  height: 3rem;
+  float: left;
+  vertical-align: text-top;
+}
+
+.article-btn{
+  width: 100%;
+  height: 2.5rem;
+  background-color: #FFFFFF;
+  color: var(--dark-rosegold-color);
+  border: 1px var(--dark-rosegold-color) solid;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.article-btn:hover{
+  background-color: var(--dark-rosegold-color);
+  color: #FFFFFF;
+}
+
+.main-image{
+  flex: 50%;
+  max-height: 90vh;
+  width: 80%;
+  object-fit: cover;
 }
