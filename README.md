@@ -11,8 +11,9 @@
   - [x] Content and Images(sourced from pixabay.com) as provided by the client
   - [ ] Responsive and Adaptive Design
 
- 
-**UI design done using Lunacy**
+
+##Extra Resources
+  - Luncay: Used to design the website UI
 
 I am open to any suggestions on improvements
 
