@@ -12,7 +12,7 @@
   - [ ] Responsive and Adaptive Design
 
 
-##Extra Resources
+## Extra Resources
   - Luncay: Used to design the website UI
 
 I am open to any suggestions on improvements
