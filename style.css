@@ -197,6 +197,19 @@ h1 strong{
   font-family: var(--heading-main-font);
   font-weight: 700 italic ;
   font-size: 1.25rem;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 .main-image{
