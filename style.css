@@ -114,6 +114,7 @@ h1 strong{
 .section{
   /* border: 1px skyblue solid; */
   height: 95vh;
+  min-height: 550px;
   padding-top: 3rem;
   padding-bottom: 1rem;
 }
@@ -214,14 +215,14 @@ h1 strong{
 
 .main-image{
   flex: 50%;
-  max-height: 90vh;
+  max-height: 90%;
   width: 80%;
   object-fit: cover;
 }
 
 /* SECTION 2 STYLING */
 .container:nth-child(2){
-  background-image: linear-gradient(#fddad38f, #ffffff8f), url(images/minimal_stuff.webp);
+  background-image: linear-gradient(#ffffff8f, #fddad38f), url(images/minimal_stuff.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -233,3 +234,94 @@ h1 strong{
   width: 80%;
 }
 
+.section2-header{
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section2-subheading{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--dark-rosegold-color);
+  letter-spacing: 2px;
+  font-weight: 700;
+
+}
+
+/* SECTION 3 STYLING */
+.section-3{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card{
+  width: 30%;
+  box-shadow: 0px 0px 7px var(--dark-rosegold-color);
+  border-radius: 10px;
+  height: 20rem;
+}
+
+.card-image{
+  margin: 1rem auto;
+  max-width: 5rem;
+  border-radius: 45px;
+  border: 2px var(--light-rosegold-color) solid;
+}
+
+.image-name{
+  text-align: center;
+  color: var(--dark-rosegold-color);
+}
+
+.image-name::after{
+  content: '';
+  margin: 1rem auto;
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: var(--dark-rosegold-color);
+}
+
+.card-content{
+  text-align: center;
+  font-family: var(--article-content-font);
+  font-weight: 300;
+  line-height: 1.5rem;
+  border-bottom: 1px var(--light-rosegold-color) solid;
+  padding-bottom: 1rem;
+}
+
+.section3-header{
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.container:nth-child(3) .section{
+  padding-top: 0;
+}
+
+/* FOOTER STYLING */
+.body-footer{
+  height: 10rem;
+  background-color: var(--dark-rosegold-color);
+  padding: 0 rem;
+}
+
+footer .row{
+  color: #FFFFFF;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.pixabay-link{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.pixabay-link:hover{
+  text-decoration: underline;
+}
