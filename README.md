@@ -9,7 +9,7 @@
   - [x] A girly handwritten font
   - [x] Headings all caps
   - [x] Content and Images(sourced from pixabay.com) as provided by the client
-  - [ ] Responsive and Adaptive Design
+  - [x] Responsive and Adaptive Design
 
 
 ## Extra Resources
