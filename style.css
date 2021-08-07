@@ -19,7 +19,9 @@
 
 header{
   background-color: var(--light-rosegold-color);
+  box-shadow: 0px 0px 10px #a3a3a3;
 }
+
 
 h1{
   font-size: 2rem;
@@ -55,7 +57,7 @@ h1 strong{
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 7rem;
+  height: 8rem;
 }
 
 .log-container{
@@ -107,6 +109,14 @@ h1 strong{
 }
 
 .navbar-link:hover::after{
+  width: 100%;
+}
+
+.navbar-link-current{
+  color: var(--dark-rosegold-color);
+}
+
+.navbar-link-current::after{
   width: 100%;
 }
 
@@ -222,10 +232,20 @@ h1 strong{
   max-height: 90%;
   width: 80%;
   object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.7;
 }
 
 /* SECTION 2 STYLING */
-.container:nth-child(2){
+body .container:nth-child(2), .aboutme-container{
+  background-image: linear-gradient(#ffffff8f, #fddad38f), url(images/minimal_stuff.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  left: 0;
+}
+
+.aboutme-container{
   background-image: linear-gradient(#ffffff8f, #fddad38f), url(images/minimal_stuff.webp);
   background-repeat: no-repeat;
   background-size: cover;
