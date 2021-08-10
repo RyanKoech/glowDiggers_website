@@ -237,7 +237,7 @@ h1 strong{
 }
 
 /* SECTION 2 STYLING */
-body .container:nth-child(2), .aboutme-container{
+ body .container:nth-child(2), .aboutme-container{/*aboutme-container is about me page styling */
   background-image: linear-gradient(#ffffff8f, #fddad38f), url(images/minimal_stuff.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,6 +337,41 @@ body .container:nth-child(2), .aboutme-container{
 .container:nth-child(3) .section{
   padding-top: 0;
 }
+
+/* CONTACT ME PAGE STYLING */
+.contact-me-heading{
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.text-field{
+
+  display: block;
+  margin: 1rem 0;
+  width: 90%;
+  padding: 0.5rem;
+  border: none;
+  color: var(--dark-rosegold-color);
+  outline: 3px rgb(218, 215, 215) solid;
+  transition: 0.5s;
+  resize: none;
+}
+
+.text-field:focus{
+  color: black;
+  outline: 3px var(--dark-rosegold-color) solid;
+}
+
+.contact-me-btn{
+  float: left;
+  width: 95%;
+  margin-top: 2rem;
+}
+
+.contact-me-image{
+  max-height: 500px;
+}
+
 
 /* FOOTER STYLING */
 .body-footer{
