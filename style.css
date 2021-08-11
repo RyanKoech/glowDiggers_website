@@ -388,11 +388,44 @@ h1 strong{
   padding: 0.5rem;
 }
 
+.blogs-article-content:nth-child(1){
+  flex: 60%;
+}
+
 .blogs-article-content:nth-child(2){
-  border: 1px var(--light-rosegold-color) solid;
+  flex: 35%;
+  border: 1px #fdece7 solid;
+  box-shadow: 0px 0px 5px #fdece7;
   text-align: left;
   padding: 0 2rem;
+  border-radius: 3px;
 }
+
+.article-list{
+  line-height: 2rem;
+}
+
+.article-list-item{
+  list-style: lower-roman;
+  transition: 0.1s;
+}
+
+.article-list-item a{
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  transition: 0.1s;
+}
+
+.article-list-item:hover{
+  color: var(--dark-rosegold-color);
+}
+
+.article-list-item:hover a{
+  color: var(--dark-rosegold-color);
+  text-decoration: underline;
+}
+
 /* FOOTER STYLING */
 .body-footer{
   height: 10rem;
