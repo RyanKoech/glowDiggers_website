@@ -561,18 +561,32 @@ footer .row{
   .navbar-list{
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     gap: 1rem;
     padding-top: 1rem;
     border-top: 1px #FFFFFF dashed;
   }
 
   .navbar-listitem{
+    width: 100%;
     border-bottom: 1px #FFFFFF solid;
     padding-bottom: 1rem;
   }
 
+  .navbar-link{
+    position: relative;
+    width: 100%;
+  }
+
   .navbar-link::after{
-    content: none;
+    content: '';
+    display: inline;
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    height: calc(100% + 1rem);
+    width: 400px;
   }
 
   .fa-bars{
