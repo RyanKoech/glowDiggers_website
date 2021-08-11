@@ -2,6 +2,8 @@
 
 **Website Build As Per the Requirements Gotten from a Random Friend**
 
+You can checkout the website [here][https://ryankoech.github.io/glowDiggers_website/index.html]
+
 ## Below are the Requirements
 
   - [ ] A 5 page website including home, blogs, about me, contacts and a 5th dynamic page to display a blog.
