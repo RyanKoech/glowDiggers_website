@@ -2,7 +2,7 @@
 
 **Website Build As Per the Requirements Gotten from a Random Friend**
 
-You can checkout the website <a href="https://ryankoech.github.io/glowDiggers_website/index.html" target="_blank">Here</a>!
+You can checkout the website [here](https://ryankoech.github.io/glowDiggers_website/index.html)!
 
 
 ## Below are the Requirements
