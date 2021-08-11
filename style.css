@@ -583,9 +583,13 @@ footer .row{
     display: inline;
     position: absolute;
     background-color: transparent;
-    top: 0;
+    top: -1rem;
     left: 0;
-    height: calc(100% + 1rem);
+    height: calc(100% + 1.5rem);
+    width: 400px;
+  }
+
+  .navbar-link:hover::after{
     width: 400px;
   }
 
