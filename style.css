@@ -372,7 +372,27 @@ h1 strong{
   max-height: 500px;
 }
 
+/* BLOGS PAGE STYLING */
 
+.blogs-row{
+  gap: 3rem;
+}
+
+.blogs-article-content{
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.blogs-article-content .main-header{
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.blogs-article-content:nth-child(2){
+  border: 1px var(--light-rosegold-color) solid;
+  text-align: left;
+  padding: 0 2rem;
+}
 /* FOOTER STYLING */
 .body-footer{
   height: 10rem;
