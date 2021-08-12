@@ -1,6 +1,4 @@
 // IMPORTS
-// import { resolve } from 'path/posix';
-// import { forEach } from 'lodash';
 import {http} from './http.js';
 
 //HTML ELEMENTS CONSTANTS

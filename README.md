@@ -16,7 +16,7 @@ You can checkout the website [here](https://ryankoech.github.io/glowDiggers_webs
 
 ## Extra Resources
   - Luncay: Used to design the website UI
-  - Mocky : API used. So much thanks to @julien-lafont for [Mocky](https://designer.mocky.io/)
+  - Mocky : API used. So much thanks to [@julien-lafont](https://github.com/julien-lafont) for [Mocky](https://designer.mocky.io/)
 
 I am open to any suggestions on improvements
 
