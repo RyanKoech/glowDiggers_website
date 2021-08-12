@@ -589,6 +589,7 @@ footer .row{
     bottom: 0;
     right: -200px;
     width: 450px;
+    z-index: 5;
     height: 100%;
     transition: 0.7s;
     transition-timing-function: cubic-bezier(.36,-0.42,.38,1.64);
