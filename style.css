@@ -426,6 +426,33 @@ h1 strong{
   text-decoration: underline;
 }
 
+/* BLOGS STRUCTURE STYLING */
+
+.blog-heading{
+  font-size: 2.25rem;
+  position: relative;
+}
+
+.blog-heading::after{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  left: calc(50% - 100px);
+  background-color: var(--light-rosegold-color);
+  margin-top: 2rem;
+
+}
+
+.article-content P{
+  width: 90%;
+  font-size: 1.25rem;
+  margin: 2rem auto;
+  line-height: 2rem;
+  text-align: justify;
+}
+
 /* FOOTER STYLING */
 .body-footer{
   background-color: var(--dark-rosegold-color);
@@ -464,14 +491,6 @@ footer .row{
   font-size: 1.5rem;
   transition: 0.3s;
 }
-
-/* .socials-link:hover{
-  color: var(--light-rosegold-color);
-} */
-/* .facebook-span:hover .fa, .twitter-span:hover .fa, .instagram-span:hover .fa, .youtube-span:hover .fa{
-  color: var(--light-rosegold-color);
-  font-size: 1.6rem;
-} */
 
 .socials-link:hover .fa{
   color: var(--light-rosegold-color);
@@ -515,6 +534,10 @@ footer .row{
   .container{
     width: 90%;
   }
+
+  .container:nth-child(3){
+    width: 80%;
+  }
   
   .article-body,.article-content,.article-body strong {
     font-size: 1.25rem;
@@ -522,9 +545,6 @@ footer .row{
 }
 
 @media (max-width: 700px){
-  .container{
-    width: 80%;
-  }
 
   .row{
     flex-direction: column;
@@ -538,6 +558,23 @@ footer .row{
     margin: 0 auto;
     max-width: 30rem;
   }
+}
+
+@media (max-width: 600px) {
+
+  .container{
+    width: 95%;
+  }
+
+  .blogs-container{
+    width: 90%;
+  }
+
+  .article-content p{
+    width: 100%;
+    font-size: 1.15rem;
+  }
+  
 }
 
 @media (max-width: 500px){
@@ -595,7 +632,7 @@ footer .row{
 
   .fa-bars{
     display: block;
-    margin-right:-20px;
+    margin-right:10px;
     margin-bottom: 10px;
     font-size: 1.25rem;
     color: #FFFFFF;
