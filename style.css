@@ -570,6 +570,10 @@ footer .row{
     width: 90%;
   }
 
+  .section-2 .article-content{
+    padding: 1rem 0;
+  }
+
   .article-content p{
     width: 100%;
     font-size: 1.15rem;
