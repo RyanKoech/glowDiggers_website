@@ -24,13 +24,13 @@ try{
   blogsList.addEventListener('click', e => {
     getClickedPostId(e);
   });
+
+  blogsList.addEventListener('touchstart', e => {
+    getClickedPostId(e);
+  });
 }catch(e){
   console.log(e)
 }
-
-
-
-
 
 //FUNCTIONS
 
