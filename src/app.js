@@ -17,7 +17,7 @@ exitMenuBtn.parentElement.addEventListener('click', hideSLideMenu);
 
 document.addEventListener('DOMContentLoaded', mainEvents);
 
-//These Try Catches are to catch the errors as these constants may be null in some situations
+//This Try-Catch is to catch the errors as blogsList may be null in some situations
 try{
   blogsList.addEventListener('click', e => {
     getClickedPostId(e);
@@ -88,6 +88,7 @@ function getClickedPostId(e){
   // console.log(e.target);
 }
 
+//Gets blog to be loaded from the API data
 async function getBlog(){
   if(blogHeading !== null){
     const blogPostData = await fetchData()
@@ -102,6 +103,7 @@ async function getBlog(){
   }
 }
 
+//Loads the Blog content
 function loadBlogContent(post){
  const header = post.Title;
  let contentBody = '';
