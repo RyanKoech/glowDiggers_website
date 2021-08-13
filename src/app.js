@@ -8,6 +8,7 @@ const openMenuBtn = document.querySelector('.fa-bars');
 const navbar = document.querySelector('.navbar');
 const blogsList = document.getElementById('article_list');
 const blogHeading = document.querySelector('.blog-heading');
+const emailTextField = document.getElementById('email_address');
 
 //EVENT LISTENERS
 
@@ -17,7 +18,7 @@ exitMenuBtn.parentElement.addEventListener('click', hideSLideMenu);
 
 document.addEventListener('DOMContentLoaded', mainEvents);
 
-//This Try-Catch is to catch the errors as blogsList may be null in some situations
+//These Try-Catches are to catch the errors as come of the constants may be null in some situations
 try{
   blogsList.addEventListener('click', e => {
     getClickedPostId(e);
@@ -29,6 +30,13 @@ try{
 }catch(e){
   console.log(e)
 }
+
+try{
+  emailTextField.addEventListener('blur', validateEmail);
+}catch(e){
+  console.log(e);
+}
+
 
 //FUNCTIONS
 
@@ -118,4 +126,17 @@ function loadBlogContent(post){
 
 function getBlogPostId(){
   return parseInt(sessionStorage.getItem('postId'));
+}
+
+// Validates if the input is an email when the text field is out of focus('blur')
+function validateEmail(){
+
+  const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,4})$/;
+
+  if(!re.test(emailTextField.value) && emailTextField.value !== ''){
+    emailTextField.classList.add('is-invalid');
+  } else {
+    emailTextField.classList.remove('is-invalid');
+  }
+
 }

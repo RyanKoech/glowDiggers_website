@@ -372,6 +372,20 @@ h1 strong{
   max-height: 500px;
 }
 
+.is-invalid{
+  position: relative;
+  color: rgb(253, 16, 95);
+  outline: 3px rgb(253, 16, 95) solid;
+  box-shadow: 0px 0px 12px rgb(253, 16, 95);
+}
+
+.is-invalid:focus{
+  position: relative;
+  color: rgb(253, 16, 95);
+  outline: 3px rgb(253, 16, 95) solid;
+  box-shadow: 0px 0px 12px rgb(253, 16, 95);
+}
+
 /* BLOGS PAGE STYLING */
 
 .blogs-row{
