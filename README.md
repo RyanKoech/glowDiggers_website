@@ -1,6 +1,6 @@
 # glowDiggers_website
 
-**Website Build As Per the Requirements Gotten from a Random Friend**
+**Website Build As Per the Requirements Gotten from a Random Friend** <br>
 **Developement Stage: Complete but subject to updates and improvements**
 
 You can checkout the website [here](https://ryankoech.github.io/glowDiggers_website/index.html)!
