@@ -82,7 +82,7 @@ function addBlogListITems(posts){
       <li class="article-list-item" id="${post.id}"><a href="blog_structure.html" class="list-item-link">${post.Title}</a></li>
     `;
   });
-
+  blogsList.innerHTML = '';
   blogsList.innerHTML = blogList;
 }
 
@@ -105,7 +105,7 @@ async function getBlog(){
     const id = getBlogPostId();
     console.log(id);
 
-    console.log(blogPostData.blog_posts[id]);
+    // console.log(blogPostData.blog_posts[id]);
 
     loadBlogContent(blogPostData.blog_posts[id]);
   }
@@ -120,6 +120,8 @@ function loadBlogContent(post){
       <p>${paragraph}</p>
     `;
  });
+ blogHeading.innerHTML = '';
+ blogHeading.nextElementSibling.innerHTML = '';
  blogHeading.appendChild(document.createTextNode(header));
  blogHeading.nextElementSibling.innerHTML = contentBody;
 }
